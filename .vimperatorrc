@@ -1,0 +1,33 @@
+set scroll=20
+
+""""""""""""""""""""
+" Colemak Mappings "
+""""""""""""""""""""
+noremap h 4h
+noremap n 4j
+noremap e 4k
+noremap i 4l
+"noremap gn j
+"noremap ge k
+
+noremap a i
+noremap A I
+noremap s a
+noremap S A
+
+nnoremap <C-h> <C-p>
+nnoremap <C-i> <C-n>
+nnoremap <C-n> H
+nnoremap <C-e> L
+nnoremap <C-o> o
+
+" U = Redo with U
+noremap U <C-r>
+
+noremap o ;
+noremap O :
+
+nnoremap o :
+nnoremap l u
+
+
