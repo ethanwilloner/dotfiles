@@ -15,19 +15,35 @@ noremap A I
 noremap s a
 noremap S A
 
+" Switch Tabs
 nnoremap <C-h> <C-p>
 nnoremap <C-i> <C-n>
+
+" Back/forward
 nnoremap <C-n> H
 nnoremap <C-e> L
+
+" Find Next
+nnoremap <C-m> n
+" Find Previous
+nnoremap <C-k> N
+
+" Bind open to Ctrl-o
 nnoremap <C-o> o
 
 " U = Redo with U
 noremap U <C-r>
 
 noremap o ;
-noremap O :
+"noremap O :
 
 nnoremap o :
 nnoremap l u
+
+" Ctrl-/ to clear search highlighting
+map <C-/> o:nohlsearch<CR><ESC>
+
+
+
 
 
