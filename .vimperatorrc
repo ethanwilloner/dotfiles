@@ -3,10 +3,10 @@ set scroll=20
 """"""""""""""""""""
 " Colemak Mappings "
 """"""""""""""""""""
-noremap h 4h
-noremap n 4j
-noremap e 4k
-noremap i 4l
+noremap n 4h
+noremap e 4j
+noremap i 4k
+noremap o 4l
 "noremap gn j
 "noremap ge k
 
@@ -16,29 +16,37 @@ noremap s a
 noremap S A
 
 " Switch Tabs
-nnoremap <C-h> <C-p>
-nnoremap <C-i> <C-n>
+nnoremap N <C-p>
+nnoremap O <C-n>
 
 " Back/forward
-nnoremap <C-n> H
-nnoremap <C-e> L
+nnoremap E H
+nnoremap I L
 
 " Find Next
-nnoremap <C-m> n
+nnoremap <C-n> n
 " Find Previous
-nnoremap <C-k> N
-
-" Bind open to Ctrl-o
-nnoremap <C-o> o
+nnoremap <C-o> N
 
 " U = Redo with U
 noremap U <C-r>
 
-noremap o ;
-"noremap O :
+"open
+noremap h o
 
-nnoremap o :
-nnoremap l u
+" Command
+noremap H :
+
+" Close window
+noremap D d
+
+" ESC
+"noremap d <ESC>
+" ESC in search mode
+"noremap <C-d> <ESC>
+
+" Alter URL
+noremap <C-u> O
 
 " Ctrl-/ to clear search highlighting
 map <C-/> o:nohlsearch<CR><ESC>
