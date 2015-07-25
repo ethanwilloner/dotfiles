@@ -7,8 +7,6 @@ noremap n 4h
 noremap e 4j
 noremap i 4k
 noremap o 4l
-"noremap gn j
-"noremap ge k
 
 noremap a i
 noremap A I
@@ -40,18 +38,12 @@ noremap H :
 " Close window
 noremap D d
 
-" ESC
-"noremap d <ESC>
-" ESC in search mode
-"noremap <C-d> <ESC>
-
 " Alter URL
 noremap <C-h> O
 
 " Ctrl-/ to clear search highlighting
 map <C-/> o:nohlsearch<CR><ESC>
 
-
-
+noremap <C-\'> ;c
 
 
