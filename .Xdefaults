@@ -1,34 +1,77 @@
-*foreground: #c6a57b
-*background: #151515
+!*foreground: #c6a57b
+!*background: #151515
 
 !black
-*color0:     #101010
-*color8:     #404040
+!*color0:     #101010
+!*color8:     #404040
 !red
-*color1:     #953331
-*color9:     #8D4A48
+!*color1:     #953331
+!*color9:     #8D4A48
 !green
-*color2:     #546A29
-*color10:    #7E9960
+!*color2:     #546A29
+!*color10:    #7E9960
 !yellow
-*color3:     #909737
-*color11:    #9CA554
+!*color3:     #909737
+!*color11:    #9CA554
 !blue
-*color4:     #385E6B
-*color12:    #5C737C
+!*color4:     #385E6B
+!*color12:    #5C737C
 !magenta
-*color5:     #7F355E
-*color13:    #95618B
+!*color5:     #7F355E
+!*color13:    #95618B
 !cyan
-*color6:     #34676F
-*color14:    #5D858A
+!*color6:     #34676F
+!*color14:    #5D858A
 !white
-*color7:     #dddddd
-*color15:    #dddddd
+!*color7:     #dddddd
+!*color15:    #dddddd
+
+URxvt.foreground:		 #0F928C
+URxvt.background:		 #2C2E2F
+
+(black)
+URxvt.color0:	#494848
+(bright black)
+URxvt.color8: 	#706E6E
+
+(red)
+URxvt.color1:	#EE4F7C
+(bright red)
+URxvt.color9: 	#D3849A
+
+(green)
+URxvt.color2: 	#6CAD66
+(bright green)
+URxvt.color10: 	#66AD72
+
+(yellow)
+URxvt.color3: 	#BEEE3B
+(bright yellow)
+URxvt.color11:  #A0EE3B
+
+(blue)
+URxvt.color4:	#006465
+(bright blue)
+URxvt.color12: 	#005C65
+
+(magenta)
+URxvt.color5:   #493FD2
+(bright magenta)
+URxvt.color13:  #3F5AD2
+
+(cyan)
+URxvt.color6:	#0F928C
+(bright cyan)
+URxvt.color14: 	#64A5A2
+
+(white)
+URxvt.color7: 	#C0C0C0
+(bright white)
+URxvt.color15: 	#E9E9E9
 
 URxvt*scrollBar: False
 URxvt*saveLines: 100000
 URxvt.urlLauncher     : firefox
 URxvt*matcher.button:        1
-URxvt.perl-lib: /usr/lib/urxvt/perl/
+URxvt.perl-lib: /usr/lib/URxvt/perl/
 URxvt.perl-ext:  default,selection-to-clipboard,matcher
