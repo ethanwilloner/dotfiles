@@ -1,3 +1,5 @@
+URxvt.font: *-*-*-*-*-16-*
+
 !*foreground: #c6a57b
 !*background: #151515
 
