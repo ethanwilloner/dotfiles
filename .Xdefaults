@@ -1,6 +1,6 @@
 !URxvt.font: *-*-*-*-*-16-*
-URxvt.font:     xft:bitstream vera sans mono:size=14:antialias=true
-URxvt.boldFont: xft:bitstream vera sans mono:bold:size=14:antialias=true
+URxvt.font:     xft:bitstream vera sans mono:size=9:antialias=false
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=9:antialias=false
 
 !*foreground: #c6a57b
 !*background: #151515
