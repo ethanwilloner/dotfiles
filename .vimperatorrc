@@ -37,6 +37,8 @@ noremap H :
 
 " Close window
 noremap D d
+" Unbind d from close window
+noremap d <Nop>
 
 " Alter URL
 noremap <C-h> O
