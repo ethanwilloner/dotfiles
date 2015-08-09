@@ -3,10 +3,13 @@ set scroll=20
 """"""""""""""""""""
 " Colemak Mappings "
 """"""""""""""""""""
-noremap n 4h
-noremap e 4j
-noremap i 4k
-noremap o 4l
+noremap <C-n> 4h
+noremap e 8j
+noremap i 8k
+noremap <C-o> 4l
+
+noremap n ;;
+noremap o ;c
 
 noremap a i
 noremap A I
@@ -22,9 +25,9 @@ nnoremap E H
 nnoremap I L
 
 " Find Next
-nnoremap <C-n> n
+nnoremap . n
 " Find Previous
-nnoremap <C-o> N
+nnoremap , N
 
 " U = Redo with U
 noremap U <C-r>
@@ -44,8 +47,8 @@ noremap d <Nop>
 noremap <C-h> O
 
 " Ctrl-/ to clear search highlighting
-map <C-/> o:nohlsearch<CR><ESC>
+map <C-/> :nohlsearch<CR><ESC>
 
-noremap <C-\'> ;c
+"noremap <C-\'> ;c
 
 
