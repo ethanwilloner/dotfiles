@@ -1,0 +1,27 @@
+# This goes in /etc/polkit-1/localauthority/50-local/
+# https://lists.debian.org/debian-user/2011/08/msg01653.html
+#
+# echo 'exec dbus-launch startxfce4' >> ~/.xinitrc
+#
+
+[upower]
+Identity=unix-user:*
+Action=org.freedesktop.upower.*
+ResultAny=yes
+
+[NetworkManager]
+Identity=unix-user:*
+Action=org.freedesktop.NetworkManager.*
+ResultAny=yes
+
+[udisks2]
+Identity=unix-user:*
+Action=org.freedesktop.udisks2.*
+ResultAny=yes
+ResultInactive=yes
+ResultActive=yes
+
+[consolekit]
+Identity=unix-user:*
+Action=org.freedesktop.consolekit.*
+ResultAny=yes

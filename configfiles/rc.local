@@ -1,0 +1,52 @@
+
+#!/bin/sh -e
+
+echo "MAC Randomization"
+ifconfig wlan0 down
+ifconfig eth0 down
+service network-manager stop
+macchanger -e wlan0
+macchanger -e eth0
+service network-manager start
+ifconfig wlan0 up
+ifconfig eth0 up
+
+echo "Wireless card power settings"
+iwconfig wlan0 power on
+
+echo "CPUfreq settings"
+cpufreq-set -g ondemand
+#cpufreq-set -g conservative
+
+echo "RFkill Bluetooth"
+rfkill block bluetooth
+
+echo "Disable swap for SSD"
+echo 0 > /proc/sys/vm/swappiness
+
+echo "Powersave"
+pm-powersave true
+
+echo "Drive power management"
+echo min_power > /sys/class/scsi_host/host0/link_power_management_policy 
+
+echo "Power save"
+echo 1 > /sys/module/snd_hda_intel/parameters/power_save;
+
+echo "Laptop mode"
+echo 5 > /proc/sys/vm/laptop_mode;
+
+echo "Power control"
+for i in `find /sys/devices/*/power/control`; do echo auto > $i; done;
+for i in `find /sys/bus/usb/devices/*/power/control`; do echo auto > $i; done;
+
+echo "Auto suspend"
+for i in `find /sys/bus/usb/devices/*/power/autosuspend`; do echo 2 > $i; done;
+
+echo "Xset bell disable"
+xset b off
+
+echo "Disable Scrolling Inertia"
+xinput --set-prop --type=float "SynPS/2 Synaptics TouchPad" "Synaptics Coasting Speed" 0 0
+
+exit 0
