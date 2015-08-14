@@ -3,9 +3,17 @@ set scroll=20
 """"""""""""""""""""
 " Colemak Mappings "
 """"""""""""""""""""
-noremap <C-n> 4h
+
+" Scroll down and up
 noremap e 8j
 noremap i 8k
+
+" Page down and up
+noremap <C-e> <C-f>
+noremap <C-i> <C-b>
+
+" Scroll left and right
+noremap <C-n> 4h
 noremap <C-o> 4l
 
 noremap n ;;
