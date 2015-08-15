@@ -57,6 +57,4 @@ noremap <C-h> O
 " Ctrl-/ to clear search highlighting
 map <C-/> :nohlsearch<CR><ESC>
 
-"noremap <C-\'> ;c
-
-
+noremap d <C-[>
