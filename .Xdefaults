@@ -2,34 +2,6 @@
 URxvt.font:     xft:bitstream vera sans mono:size=9:antialias=false
 URxvt.boldFont: xft:bitstream vera sans mono:bold:size=9:antialias=false
 
-!*foreground: #c6a57b
-!*background: #151515
-
-!black
-!*color0:     #101010
-!*color8:     #404040
-!red
-!*color1:     #953331
-!*color9:     #8D4A48
-!green
-!*color2:     #546A29
-!*color10:    #7E9960
-!yellow
-!*color3:     #909737
-!*color11:    #9CA554
-!blue
-!*color4:     #385E6B
-!*color12:    #5C737C
-!magenta
-!*color5:     #7F355E
-!*color13:    #95618B
-!cyan
-!*color6:     #34676F
-!*color14:    #5D858A
-!white
-!*color7:     #dddddd
-!*color15:    #dddddd
-
 URxvt.foreground:		 #0F928C
 URxvt.background:		 #2C2E2F
 
@@ -79,35 +51,4 @@ URxvt.urlLauncher     : firefox
 URxvt*matcher.button:        1
 URxvt.perl-lib: /usr/lib/URxvt/perl/
 URxvt.perl-ext:  default,selection-to-clipboard,matcher
-
-
-
-! Color-scheme : Relic Dark
-! Author       : stark <stark@openmailbox.org>
-
-!*background: #1D2426
-!*foreground: #8FA388
-
-! Alternate foreground
-!*foreground: #AB9C71
-
-!*cursorColor: #BE5E1E
-
-!*color0:  #39474A
-!*color1:  #986345
-!*color2:  #788249
-!*color3:  #9B6A46
-!*color4:  #3E5951
-!*color5:  #B9924A
-!*color6:  #5d796a
-!*color7:  #977D5E
-!*color8:  #4C5F63
-!*color9:  #B07350
-!*color10: #869151
-!*color11: #AF6B42
-!*color12: #567A6E
-!*color13: #D69D55
-!*color14: #668574
-!*color15: #AB9C71
-
-! vim: ft=xdefaults
+URxvt.iso14755 : false
