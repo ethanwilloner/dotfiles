@@ -18,8 +18,11 @@ noremap <C-i> <C-b>
 noremap <C-n> 4h
 noremap <C-o> 4l
 
-noremap n ;;
-noremap o ;c
+" Context menu's 
+noremap o ;;
+noremap H ;c
+noremap T F
+
 
 noremap a i
 noremap A I
@@ -29,6 +32,10 @@ noremap S A
 " Switch Tabs
 nnoremap N <C-p>
 nnoremap O <C-n>
+
+" Move tabs
+map <C-S-n> :tabm -1<CR>
+map <C-S-o> :tabm +1<CR>
 
 " Back/forward
 nnoremap E H
@@ -43,10 +50,10 @@ nnoremap , N
 noremap U <C-r>
 
 "open
-noremap h o
+noremap n o
 
 " Command
-noremap H :
+noremap h :
 
 " Close window
 noremap D d
@@ -59,4 +66,5 @@ noremap <C-h> O
 " Ctrl-/ to clear search highlighting
 map <C-/> :nohlsearch<CR><ESC>
 
+" Work around for ESC not working in insert mode occasionally
 noremap d <C-[>
