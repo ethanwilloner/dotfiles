@@ -1,5 +1,6 @@
 set focuscontent
 set scroll=20
+colorscheme solarized-dark
 
 """"""""""""""""""""
 " Colemak Mappings "
