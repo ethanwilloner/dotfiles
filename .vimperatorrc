@@ -1,5 +1,6 @@
 set focuscontent
 set scroll=20
+colorscheme solarized-dark
 
 """"""""""""""""""""
 " Colemak Mappings "
@@ -65,4 +66,7 @@ noremap <C-h> O
 " Ctrl-/ to clear search highlighting
 map <C-/> :nohlsearch<CR><ESC>
 
+" Work around for ESC not leaving input mode
 noremap d <C-[>
+
+
