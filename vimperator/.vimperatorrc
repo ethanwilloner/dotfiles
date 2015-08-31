@@ -20,9 +20,10 @@ noremap <C-o> 4l
 
 " Context menu's 
 noremap o ;;
-noremap H ;c
 noremap T F
 
+" tabgroups
+noremap H :tabgroups 
 
 noremap a i
 noremap A I
