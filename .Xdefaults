@@ -2,49 +2,6 @@
 URxvt.font:     xft:bitstream vera sans mono:size=9:antialias=false
 URxvt.boldFont: xft:bitstream vera sans mono:bold:size=9:antialias=false
 
-URxvt.foreground:		 #0F928C
-URxvt.background:		 #2C2E2F
-
-(black)
-URxvt.color0:	#494848
-(bright black)
-URxvt.color8: 	#706E6E
-
-(red)
-URxvt.color1:	#EE4F7C
-(bright red)
-URxvt.color9: 	#D3849A
-
-(green)
-URxvt.color2: 	#6CAD66
-(bright green)
-URxvt.color10: 	#66AD72
-
-(yellow)
-URxvt.color3: 	#BEEE3B
-(bright yellow)
-URxvt.color11:  #A0EE3B
-
-(blue)
-URxvt.color4:	#006465
-(bright blue)
-URxvt.color12: 	#005C65
-
-(magenta)
-URxvt.color5:   #493FD2
-(bright magenta)
-URxvt.color13:  #3F5AD2
-
-(cyan)
-URxvt.color6:	#0F928C
-(bright cyan)
-URxvt.color14: 	#64A5A2
-
-(white)
-URxvt.color7: 	#C0C0C0
-(bright white)
-URxvt.color15: 	#E9E9E9
-
 URxvt*scrollBar: False
 URxvt*saveLines: 100000
 URxvt.urlLauncher     : firefox
@@ -52,3 +9,60 @@ URxvt*matcher.button:        1
 URxvt.perl-lib: /usr/lib/URxvt/perl/
 URxvt.perl-ext:  default,selection-to-clipboard,matcher
 URxvt.iso14755 : false
+
+URxvt.background:	#20242c
+URxvt.foreground:	#b3b8c4
+
+URxvt.color0:	#3e4853
+URxvt.color1:	#b06a58
+URxvt.color2:	#95b47b
+URxvt.color3:	#e5c078
+URxvt.color4:	#58698c
+URxvt.color5:	#7b5e8d
+URxvt.color6:	#82a1b2
+URxvt.color7:	#cccaca
+
+URxvt.color8:	#525c67
+URxvt.color9:	#ba7e6c
+URxvt.color10:	#a9c88f
+URxvt.color11:	#f9d48c
+URxvt.color12:	#6c7da0
+URxvt.color13:	#8f72a1
+URxvt.color14:	#96b5c6
+URxvt.color15:	#e0dede
+
+!URxvt.foreground:   #cccccc
+!URxvt.background:   #2d2d2d
+!URxvt.cursorColor:  #aeafad
+
+! Black / Grey
+! URxvt.color0:       #000000
+! URxvt.color8:       #666666
+!
+! ! Red / Bright Red
+! URxvt.color1:       #f2777a
+! URxvt.color9:       #FF3334
+!
+! ! Green + Bright Green
+! URxvt.color2:       #99cc99
+! URxvt.color10:      #9ec400
+!
+! ! Yellow (Orange) + Bright Yellow (Yellow)
+! URxvt.color3:       #f99157
+! URxvt.color11:      #ffcc66
+!
+! ! Blue + Bright Blue
+! URxvt.color4:       #6699cc
+! URxvt.color12:      #6699cc
+!
+! ! Magenta (Purple) + Bright Magenta
+! URxvt.color5:       #cc99cc
+! URxvt.color13:      #b777e0
+!
+! ! Cyan (Aqua) + Bright Cyan
+! URxvt.color6:       #66cccc
+! URxvt.color14:      #54ced6
+!
+! ! Light Grey (Selection) + White (Current Line)
+! URxvt.color7:       #515151
+! URxvt.color15:      #393939
