@@ -66,3 +66,23 @@ URxvt.color15:	#e0dede
 ! ! Light Grey (Selection) + White (Current Line)
 ! URxvt.color7:       #515151
 ! URxvt.color15:      #393939
+
+rofi.terminal: urxvt
+rofi.opacity: 90
+rofi.width: 50
+rofi.lines: 10
+rofi.columns: 1
+rofi.font: SourceCodePro 9
+rofi.fg: #1aa
+rofi.bg: #333
+rofi.hlfg: #333
+rofi.hlbg: #1aa
+rofi.bc: #1aa
+rofi.bw: 2
+rofi.location: 7
+rofi.padding: 2
+rofi.yoffset: -20
+rofi.xoffset: 0
+rofi.fixed-num-lines: false
+rofi.hmode: false
+rofi.ssh-set-title: true
