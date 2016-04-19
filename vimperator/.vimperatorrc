@@ -31,16 +31,16 @@ noremap s a
 noremap S A
 
 " Switch Tabs
-nnoremap N <C-p>
-nnoremap O <C-n>
+nnoremap I <C-p>
+nnoremap E <C-n>
 
 " Move tabs
 map <C-S-n> :tabm -1<CR>
 map <C-S-o> :tabm +1<CR>
 
 " Back/forward
-nnoremap E H
-nnoremap I L
+nnoremap N H
+nnoremap O L
 
 " Find Next
 nnoremap . n
