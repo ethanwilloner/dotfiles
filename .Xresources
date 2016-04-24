@@ -31,41 +31,14 @@ URxvt.color13:	#8f72a1
 URxvt.color14:	#96b5c6
 URxvt.color15:	#e0dede
 
-!URxvt.foreground:   #cccccc
-!URxvt.background:   #2d2d2d
-!URxvt.cursorColor:  #aeafad
-
-! Black / Grey
-! URxvt.color0:       #000000
-! URxvt.color8:       #666666
-!
-! ! Red / Bright Red
-! URxvt.color1:       #f2777a
-! URxvt.color9:       #FF3334
-!
-! ! Green + Bright Green
-! URxvt.color2:       #99cc99
-! URxvt.color10:      #9ec400
-!
-! ! Yellow (Orange) + Bright Yellow (Yellow)
-! URxvt.color3:       #f99157
-! URxvt.color11:      #ffcc66
-!
-! ! Blue + Bright Blue
-! URxvt.color4:       #6699cc
-! URxvt.color12:      #6699cc
-!
-! ! Magenta (Purple) + Bright Magenta
-! URxvt.color5:       #cc99cc
-! URxvt.color13:      #b777e0
-!
-! ! Cyan (Aqua) + Bright Cyan
-! URxvt.color6:       #66cccc
-! URxvt.color14:      #54ced6
-!
-! ! Light Grey (Selection) + White (Current Line)
-! URxvt.color7:       #515151
-! URxvt.color15:      #393939
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #393939, #393939, #268bd2
+rofi.color-normal: #393939, #ffffff, #393939, #268bd2, #ffffff
+rofi.color-active: #393939, #268bd2, #393939, #268bd2, #205171
+rofi.color-urgent: #393939, #f3843d, #393939, #268bd2, #ffc39c
 
 rofi.terminal: urxvt
 rofi.opacity: 90
