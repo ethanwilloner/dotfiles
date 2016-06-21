@@ -35,8 +35,8 @@ nnoremap I <C-p>
 nnoremap E <C-n>
 
 " Move tabs
-map <C-S-n> :tabm -1<CR>
-map <C-S-o> :tabm +1<CR>
+map <C-S-i> :tabm -1<CR>
+map <C-S-e> :tabm +1<CR>
 
 " Back/forward
 nnoremap N H
