@@ -64,8 +64,19 @@ noremap d <Nop>
 " Alter URL
 noremap <C-h> O
 
+" Create bookmark
+noremap B :bmark
+
+" Starting and stopping tab reloads
+noremap R :reloadall<CR><ESC>
+noremap s :stop<CR><ESC>
+noremap S :stopall<CR><ESC>
+
 " Ctrl-/ to clear search highlighting
 map <C-/> :nohlsearch<CR><ESC>
 
 " Work around for ESC not working in insert mode occasionally
 noremap d <C-[>
+
+" Make Firefox run faster by using JIT
+set! javascript.options.jit.chrome=true
