@@ -43,9 +43,9 @@ nnoremap N H
 nnoremap O L
 
 " Find Next
-nnoremap . n
+nnoremap , n
 " Find Previous
-nnoremap , N
+nnoremap . N
 
 " U = Redo with U
 noremap U <C-r>
