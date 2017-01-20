@@ -9,6 +9,7 @@ URxvt*matcher.button:        1
 URxvt.perl-lib: /usr/lib/URxvt/perl/
 URxvt.perl-ext:  default,selection-to-clipboard,matcher
 URxvt.iso14755 : false
+URxvt.print-pipe: "cat > /dev/null" 
 
 URxvt.background:	#20242c
 URxvt.foreground:	#b3b8c4
