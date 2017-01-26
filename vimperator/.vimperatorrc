@@ -83,3 +83,6 @@ noremap <C-u> :set invusermode<CR>
 
 " Make Firefox run faster by using JIT
 set! javascript.options.jit.chrome=true
+
+" Enable incresed process count, helps with slowness due to vimperator not supporting e10s
+set! dom.ipc.processCount=8
