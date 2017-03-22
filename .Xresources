@@ -4,9 +4,9 @@ URxvt.boldFont: xft:bitstream vera sans mono:bold:size=9:antialias=false
 
 URxvt*scrollBar: False
 URxvt*saveLines: 100000
-URxvt.urlLauncher     : firefox
-URxvt*matcher.button:        1
-URxvt.perl-lib: /usr/lib64/urxvt/perl/
+URxvt.url-launcher: firefox
+URxvt*matcher.button: 1
+URxvt.perl-lib: /usr/lib64/urxvt/perl
 URxvt.perl-ext:  default,selection-to-clipboard,matcher
 URxvt.iso14755 : false
 URxvt.print-pipe: "cat > /dev/null" 
