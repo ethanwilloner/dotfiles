@@ -40,8 +40,8 @@ URxvt*color13:          #CC99FF
 URxvt*color6:          #66CC99
 URxvt*color14:         #99FFCC
 !WHT
-URxvt*color7:          #CCCCCC
-URxvt*color15:         #FFFFFF!! Solarized Light
+!URxvt*color7:          #CCCCCC
+!URxvt*color15:         #FFFFFF
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme

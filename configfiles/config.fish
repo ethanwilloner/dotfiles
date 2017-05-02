@@ -1,3 +1,4 @@
+alias tmux="env TERM=screen-256color tmux"
 alias make="make -j9"
 
 set -x GOPATH $HOME/gopath
