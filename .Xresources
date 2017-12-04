@@ -1,6 +1,6 @@
 !URxvt.font: *-*-*-*-*-16-*
-URxvt.font:     xft:bitstream vera sans mono:size=9:antialias=false
-URxvt.boldFont: xft:bitstream vera sans mono:bold:size=9:antialias=false
+URxvt.font:     xft:bitstream vera sans mono:size=9:antialias=true
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=9:antialias=true
 
 URxvt*scrollBar: False
 URxvt*saveLines: 100000
@@ -11,37 +11,40 @@ URxvt.perl-ext:  default,selection-to-clipboard,matcher
 URxvt.iso14755 : false
 URxvt.print-pipe: "cat > /dev/null" 
 
-!http://dotshare.it/dots/169/
-URxvt*background:        #333333
-URxvt*foreground:        #cccccc
-URxvt*cursorColor:       #999999
-URxvt*colorBD:           #ffffff
-URxvt*colorUL:           #ffff99
+!Dark
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
 
-!BLK
-URxvt*color0:           #666666
-URxvt*color8:           #999999
-!RED
-URxvt*color1:          #CC6699
-URxvt*color9:	        #FF99CC
-!GRN
-URxvt*color2:           #99CC66
-URxvt*color10:         #CCFF99
-!YEL
-URxvt*color3:          #CC9966
-URxvt*color11:         #FFCC99
-!BLU
-URxvt*color4:          #6699CC
-URxvt*color12:         #99CCFF
-!MAG
-URxvt*color5:           #9966CC
-URxvt*color13:          #CC99FF
-!CYN
-URxvt*color6:          #66CC99
-URxvt*color14:         #99FFCC
-!WHT
-!URxvt*color7:          #CCCCCC
-!URxvt*color15:         #FFFFFF
+URxvt*background:              S_base03
+URxvt*foreground:              S_base0
+URxvt*fading:                  40
+URxvt*fadeColor:               S_base03
+URxvt*cursorColor:             S_base1
+URxvt*pointerColorBackground:  S_base01
+URxvt*pointerColorForeground:  S_base1
+
+URxvt*color0:                  S_base02
+URxvt*color1:                  S_red
+URxvt*color2:                  S_green
+URxvt*color3:                  S_yellow
+URxvt*color4:                  S_blue
+URxvt*color5:                  S_magenta
+URxvt*color6:                  S_cyan
+URxvt*color7:                  S_base2
+URxvt*color9:                  S_orange
+URxvt*color8:                  S_base03
+URxvt*color10:                 S_base01
+URxvt*color11:                 S_base00
+URxvt*color12:                 S_base0
+URxvt*color13:                 S_violet
+URxvt*color14:                 S_base1
+URxvt*color15:                 S_base3
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
