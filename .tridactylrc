@@ -39,8 +39,6 @@ unbind --mode=normal y
 unbind --mode=normal ;
 unbind <C-f>
 
-#bind ; fillcmdline
-
 # ** Colemak Swaps
 # consider scrollpage 0.2
 bind n scrollline 10
@@ -73,6 +71,14 @@ bind H forward
 # swap p and P
 bind p clipboard tabopen
 bind P clipboard open
+
+# Bindings for mapping / to find
+bind / fillcmdline find
+bind ? fillcmdline find -?
+bind ] findnext 1
+bind [ findnext -1
+bind <Space>/ nohlsearch
+set findcase smart
 
 " Comment toggler for Reddit and Hacker News
 bind ;c hint -c [class*="expand"],[class="togg"]
