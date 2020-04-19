@@ -1,6 +1,6 @@
 !URxvt.font: *-*-*-*-*-16-*
-URxvt.font:     xft:bitstream vera sans mono:size=8:antialias=true
-URxvt.boldFont: xft:bitstream vera sans mono:bold:size=8:antialias=true
+URxvt.font:     xft:bitstream vera sans mono:size=10:antialias=true
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=10:antialias=true
 
 URxvt*scrollBar: False
 URxvt*saveLines: 100000
@@ -9,7 +9,7 @@ URxvt*matcher.button: 1
 URxvt.perl-lib: /usr/lib64/urxvt/perl
 URxvt.perl-ext:  default,selection-to-clipboard,matcher,font-size
 URxvt.iso14755 : false
-URxvt.print-pipe: "cat > /dev/null" 
+URxvt.print-pipe: "cat > /dev/null"
 URxvt.intensityStyles: false
 
 URxvt.keysym.C-Up:     font-size:increase
@@ -20,8 +20,60 @@ URxvt.keysym.End: \033[4~
 URxvt.keysym.KP_Home: \033[1~
 URxvt.keysym.KP_End:  \033[4~
 
-#define ARC_DARK
+#define SEOUL256_LIGHT
 #define ROFI_CUSTOM
+
+#ifdef SEOUL256
+! seoul256 (dark) theme adapted for URxvt
+! append the content of this file to your .Xresources
+URxvt*background: #3a3a3a
+URxvt*foreground: #d0d0d0
+URxvt*color0: #4e4e4e
+URxvt*color1: #d68787
+URxvt*color2: #5f865f
+URxvt*color3: #d8af5f
+URxvt*color4: #85add4
+URxvt*color5: #d7afaf
+URxvt*color6: #87afaf
+URxvt*color7: #d0d0d0
+URxvt*color8: #626262
+URxvt*color9: #d75f87
+URxvt*color10: #87af87
+URxvt*color11: #ffd787
+URxvt*color12: #add4fb
+URxvt*color13: #ffafaf
+URxvt*color14: #87d7d7
+URxvt*color15: #e4e4e4
+URxvt*cursorColor: #d0d0d0
+URxvt*cursorColor2: #3a3a3a
+URxvt*colorBD: #e4e4e4
+#endif
+
+#ifdef SEOUL256_LIGHT
+! seoul256 (light) theme adapted for URxvt
+! append the content of this file to your .Xresources
+URxvt*background: #dadada
+URxvt*foreground: #4e4e4e
+URxvt*color0: #4e4e4e
+URxvt*color1: #af5f5f
+URxvt*color2: #5f885f
+URxvt*color3: #af8760
+URxvt*color4: #5f87ae
+URxvt*color5: #875f87
+URxvt*color6: #5f8787
+URxvt*color7: #e4e4e4
+URxvt*color8: #3a3a3a
+URxvt*color9: #870100
+URxvt*color10: #005f00
+URxvt*color11: #d8865f
+URxvt*color12: #0087af
+URxvt*color13: #87025f
+URxvt*color14: #008787
+URxvt*color15: #eeeeee
+URxvt*cursorColor: #4e4e4e
+URxvt*cursorColor2: #dadada
+URxvt*colorBD: #3a3a3a
+#endif
 
 #ifdef SOLARIZED_DARK
 #define S_base03        #002b36
