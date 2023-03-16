@@ -3,6 +3,7 @@ alias make="make -j9"
 
 set -x GOPATH $HOME/gopath
 set -x GOBIN $GOPATH/bin
+set -Ux PYTHONSTARTUP (python -m jedi repl)
 
 # Fuzzy cd with FZF
 function -d "Fuzzy change directory"  fcd
