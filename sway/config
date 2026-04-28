@@ -177,10 +177,11 @@ exec --no-startup-id amixer -c 0 set 'Headphone Mic Boost',0 1
 exec_always --no-startup-id swaymsg "output DP-1 enable primary"
 exec_always --no-startup-id ~/dotfiles/sway/monitor_layout.sh
 exec_always --no-startup-id wlsunset -t 2000 -T 3000
-# TODO: Fix the dpms issue where it wont turn back on after lock
 exec_always swayidle -w \
-  timeout 300 'swaylock -f -c 000000' \
-  before-sleep 'swaylock -f -c 000000'
+    timeout 300 'swaylock -f -c 000000' \
+    timeout 300 'swaymsg "output * power off"' \
+    resume 'swaymsg "output * power on"' \
+    before-sleep 'swaylock -f -c 000000'
 
 ## Custom bindings ##
 bindsym $mod+Shift+c kill
