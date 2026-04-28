@@ -177,9 +177,9 @@ exec --no-startup-id amixer -c 0 set 'Headphone Mic Boost',0 1
 exec_always --no-startup-id swaymsg "output DP-1 enable primary"
 exec_always --no-startup-id ~/dotfiles/sway/monitor_layout.sh
 exec_always --no-startup-id wlsunset -t 2000 -T 3000
+# TODO: Fix the dpms issue where it wont turn back on after lock
 exec_always swayidle -w \
-  timeout 300 'swaylock -f -c 000000; swaymsg "output * dpms off"' \
-  resume 'swaymsg "output * dpms on"' \
+  timeout 300 'swaylock -f -c 000000;
   before-sleep 'swaylock -f -c 000000'
 
 ## Custom bindings ##
@@ -199,7 +199,7 @@ bindsym Menu exec pcmanfm
 # TODO: Test all the XF86 binds with 'wev' to fix them
 
 # Lock Screen buttons
-#set $lock "swaylock -f -c 000000 & sleep 0.2; swaymsg 'output * dpms off'"
+set $lock "swaylock -f -c 000000"
 bindsym XF86Favorites exec $lock
 bindsym XF86ScreenSaver exec $lock
 bindsym $mod+Shift+l exec $lock
