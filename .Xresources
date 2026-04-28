@@ -1,6 +1,6 @@
-!URxvt.font: *-*-*-*-*-16-*
-URxvt.font:     xft:bitstream vera sans mono:size=10:antialias=true
-URxvt.boldFont: xft:bitstream vera sans mono:bold:size=10:antialias=true
+!URxvt.font: *-*-*-*-*-12-*
+URxvt.font:     xft:bitstream vera sans mono:size=14:antialias=true
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=14:antialias=true
 
 URxvt*scrollBar: False
 URxvt*saveLines: 100000
@@ -9,7 +9,7 @@ URxvt*matcher.button: 1
 URxvt.perl-lib: /usr/lib64/urxvt/perl
 URxvt.perl-ext:  default,selection-to-clipboard,matcher,font-size
 URxvt.iso14755 : false
-URxvt.print-pipe: "cat > /dev/null"
+URxvt.print-pipe: "cat > /dev/null" 
 URxvt.intensityStyles: false
 
 URxvt.keysym.C-Up:     font-size:increase
@@ -20,60 +20,8 @@ URxvt.keysym.End: \033[4~
 URxvt.keysym.KP_Home: \033[1~
 URxvt.keysym.KP_End:  \033[4~
 
-#define SEOUL256_LIGHT
+#define GRUVBOX_DARK
 #define ROFI_CUSTOM
-
-#ifdef SEOUL256
-! seoul256 (dark) theme adapted for URxvt
-! append the content of this file to your .Xresources
-URxvt*background: #3a3a3a
-URxvt*foreground: #d0d0d0
-URxvt*color0: #4e4e4e
-URxvt*color1: #d68787
-URxvt*color2: #5f865f
-URxvt*color3: #d8af5f
-URxvt*color4: #85add4
-URxvt*color5: #d7afaf
-URxvt*color6: #87afaf
-URxvt*color7: #d0d0d0
-URxvt*color8: #626262
-URxvt*color9: #d75f87
-URxvt*color10: #87af87
-URxvt*color11: #ffd787
-URxvt*color12: #add4fb
-URxvt*color13: #ffafaf
-URxvt*color14: #87d7d7
-URxvt*color15: #e4e4e4
-URxvt*cursorColor: #d0d0d0
-URxvt*cursorColor2: #3a3a3a
-URxvt*colorBD: #e4e4e4
-#endif
-
-#ifdef SEOUL256_LIGHT
-! seoul256 (light) theme adapted for URxvt
-! append the content of this file to your .Xresources
-URxvt*background: #dadada
-URxvt*foreground: #4e4e4e
-URxvt*color0: #4e4e4e
-URxvt*color1: #af5f5f
-URxvt*color2: #5f885f
-URxvt*color3: #af8760
-URxvt*color4: #5f87ae
-URxvt*color5: #875f87
-URxvt*color6: #5f8787
-URxvt*color7: #e4e4e4
-URxvt*color8: #3a3a3a
-URxvt*color9: #870100
-URxvt*color10: #005f00
-URxvt*color11: #d8865f
-URxvt*color12: #0087af
-URxvt*color13: #87025f
-URxvt*color14: #008787
-URxvt*color15: #eeeeee
-URxvt*cursorColor: #4e4e4e
-URxvt*cursorColor2: #dadada
-URxvt*colorBD: #3a3a3a
-#endif
 
 #ifdef SOLARIZED_DARK
 #define S_base03        #002b36
@@ -231,33 +179,66 @@ URxvt*color15: S_base3
 *.color15:      #d7d7d7
 #endif
 
-#ifdef ROFI_CUSTOM
-! ------------------------------------------------------------------------------
-! ROFI Color theme
-! ------------------------------------------------------------------------------
-rofi.color-enabled: true
-rofi.color-window: #393939, #393939, #268bd2
-rofi.color-normal: #393939, #ffffff, #393939, #268bd2, #ffffff
-rofi.color-active: #393939, #268bd2, #393939, #268bd2, #205171
-rofi.color-urgent: #393939, #f3843d, #393939, #268bd2, #ffc39c
-
-rofi.terminal: urxvt
-rofi.opacity: 90
-rofi.width: 50
-rofi.lines: 10
-rofi.columns: 1
-rofi.font: SourceCodePro 16
-rofi.fg: #1aa
-rofi.bg: #333
-rofi.hlfg: #333
-rofi.hlbg: #1aa
-rofi.bc: #1aa
-rofi.bw: 2
-rofi.location: 7
-rofi.padding: 2
-rofi.yoffset: -20
-rofi.xoffset: 0
-rofi.fixed-num-lines: false
-rofi.hmode: false
-rofi.ssh-set-title: true
+#ifdef GRUVBOX_LIGHT
+! hard contrast: *background: #f9f5d7
+*background: #fbf1c7
+! soft contrast: *background: #f2e5bc
+*foreground: #3c3836
+! Black + DarkGrey
+*color0:  #fdf4c1
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #9d0006
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #79740e
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #b57614
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #076678
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #8f3f71
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #427b58
+! LightGrey + White
+*color7:  #7c6f64
+*color15: #3c3836
 #endif
+
+
+#ifdef GRUVBOX_DARK
+! hard contrast: *background: #1d2021
+*background: #282828
+! soft contrast: *background: #32302f
+*foreground: #ebdbb2
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2
+#endif
+

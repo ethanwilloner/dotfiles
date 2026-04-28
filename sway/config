@@ -24,6 +24,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec urxvt256c -e fish
+
 #bindsym $mod+Return exec gnome-terminal
 input * {
     xkb_layout "us"
@@ -156,11 +157,6 @@ bar {
 }
 
 ## Variables ##
-# Dont set dpms off right now, cannot get displays to turn on afterwards
-# Need to implement swayidle and etc for timeout and display off
-#set $lock swaylock -d -f -c 000000 & sleep 1 && swaymsg "output * dpms off"
-set $lock swaylock -d -f -c 000000
-
 set $suspend systemctl suspend
 set $hibernate systemctl hibernate
 
@@ -175,11 +171,16 @@ exec --no-startup-id setxkbmap -v us -variant colemak
 exec --no-startup-id qlipper
 # Need to find alternative
 #exec --no-startup-id pasystray
+exec_always --no-startup-id xrdb -merge ~/.Xresources
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id amixer -c 0 set 'Headphone Mic Boost',0 1
+exec_always --no-startup-id swaymsg "output DP-1 enable primary"
 exec_always --no-startup-id ~/dotfiles/sway/monitor_layout.sh
 exec_always --no-startup-id wlsunset -t 2000 -T 3000
-
+exec_always swayidle -w \
+  timeout 300 'swaylock -f -c 000000; swaymsg "output * dpms off"' \
+  resume 'swaymsg "output * dpms on"' \
+  before-sleep 'swaylock -f -c 000000'
 
 ## Custom bindings ##
 bindsym $mod+Shift+c kill
@@ -187,8 +188,8 @@ bindsym $mod+l move workspace to output left
 bindsym $mod+u move workspace to output right
 
 # wofi bindings
-bindsym $mod+k exec wofi -G --show drun
-bindsym $mod+m exec wofi -G --show run
+bindsym $mod+k exec wofi -G --term urxvt --show drun
+bindsym $mod+m exec wofi -G --term urxvt --show run
 #bindsym $mod+, exec wofi -G --show window
 #bindsym $mod+. exec wofi -G --show ssh
 
@@ -198,6 +199,7 @@ bindsym Menu exec pcmanfm
 # TODO: Test all the XF86 binds with 'wev' to fix them
 
 # Lock Screen buttons
+#set $lock "swaylock -f -c 000000 & sleep 0.2; swaymsg 'output * dpms off'"
 bindsym XF86Favorites exec $lock
 bindsym XF86ScreenSaver exec $lock
 bindsym $mod+Shift+l exec $lock
