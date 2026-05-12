@@ -171,17 +171,23 @@ exec --no-startup-id setxkbmap -v us -variant colemak
 exec --no-startup-id qlipper
 # Need to find alternative
 #exec --no-startup-id pasystray
-exec_always --no-startup-id xrdb -merge ~/.Xresources
+exec_always /usr/libexec/xdg-desktop-portal-gtk
+exec_always --no-startup-id xrdb -l ~/.Xresources
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id amixer -c 0 set 'Headphone Mic Boost',0 1
 exec_always --no-startup-id swaymsg "output DP-1 enable primary"
 exec_always --no-startup-id ~/dotfiles/sway/monitor_layout.sh
 exec_always --no-startup-id wlsunset -t 2000 -T 3000
 exec_always swayidle -w \
-    timeout 300 'swaylock -f -c 000000' \
-    timeout 300 'swaymsg "output * power off"' \
+    timeout 600 'swaylock -f -c 000000' \
+    timeout 600 'swaymsg "output * power off"' \
     resume 'swaymsg "output * power on"' \
     before-sleep 'swaylock -f -c 000000'
+for_window [app_id=".*firefox$"] inhibit_idle fullscreen
+for_window [app_id=".*mpv$"] inhibit_idle fullscreen
+for_window [app_id=".*vlc$"] inhibit_idle fullscreen
+for_window [app_id=".*chrome"] inhibit_idle fullscreen
+for_window [app_id=".*chromium"] inhibit_idle fullscreen
 
 ## Custom bindings ##
 bindsym $mod+Shift+c kill
@@ -223,3 +229,5 @@ bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
+exec_always swaymsg "focus output DP-1"
